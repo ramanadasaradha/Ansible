@@ -1,0 +1,9 @@
+---
+ - name: without loop
+   hosts: ramana
+   tasks:
+   - yum:
+      name:
+        - httpd
+        - vsftpd
+      state: present
